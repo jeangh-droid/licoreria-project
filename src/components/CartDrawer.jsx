@@ -8,20 +8,22 @@ const CartDrawer = ({ isOpen, onClose, items, onUpdateQuantity, onRemove }) => {
 
   const handleCheckout = () => {
     if (items.length === 0) return;
-    
-    let message = "¡Hola! Quiero realizar el siguiente pedido:\n\n";
+
+    let message = "🍻 ¡Hola! Quiero realizar el siguiente pedido:\n\n";
+
     items.forEach(item => {
-      message += `• ${item.quantity} x ${item.product.name} - S/ ${(item.product.price * item.quantity).toFixed(2)}\n`;
+      message += `🍾 ${item.quantity} x ${item.product.name} - S/ ${(item.product.price * item.quantity).toFixed(2)}\n`;
     });
-    message += `\n*TOTAL: S/ ${total.toFixed(2)}*`;
-    
+
+    message += `\n💰 *TOTAL: S/ ${total.toFixed(2)}*`;
+
     window.open(generateWhatsAppLink(message), '_blank');
   };
 
   return (
     <>
       {isOpen && (
-        <div 
+        <div
           className="fixed inset-0 bg-black/40 backdrop-blur-sm z-[100] transition-opacity"
           onClick={onClose}
         />
@@ -66,21 +68,21 @@ const CartDrawer = ({ isOpen, onClose, items, onUpdateQuantity, onRemove }) => {
                     </div>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2 bg-slate-50 rounded-lg p-1 border border-slate-100">
-                        <button 
+                        <button
                           onClick={() => onUpdateQuantity(item.product.id, Math.max(1, item.quantity - 1))}
                           className="w-6 h-6 flex items-center justify-center text-slate-400 hover:text-slate-900"
                         >
                           <Minus className="w-3 h-3" />
                         </button>
                         <span className="w-4 text-center font-black text-slate-900 text-xs">{item.quantity}</span>
-                        <button 
+                        <button
                           onClick={() => onUpdateQuantity(item.product.id, item.quantity + 1)}
                           className="w-6 h-6 flex items-center justify-center text-slate-400 hover:text-slate-900"
                         >
                           <Plus className="w-3 h-3" />
                         </button>
                       </div>
-                      <button 
+                      <button
                         onClick={() => onRemove(item.product.id)}
                         className="text-slate-300 hover:text-red-500 transition-colors"
                       >
@@ -100,7 +102,7 @@ const CartDrawer = ({ isOpen, onClose, items, onUpdateQuantity, onRemove }) => {
                 <span className="text-xs font-black text-slate-400 uppercase tracking-widest">Total a pagar</span>
                 <span className="text-2xl font-black text-slate-900 tracking-tighter">S/ {total.toFixed(2)}</span>
               </div>
-              <button 
+              <button
                 onClick={handleCheckout}
                 className="w-full bg-[#ff6d00] hover:bg-black text-white py-4 rounded-2xl font-black uppercase text-sm tracking-tighter shadow-xl transition-all active:scale-95 flex items-center justify-center gap-3"
               >

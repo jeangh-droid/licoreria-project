@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { NAV_ITEMS, generateWhatsAppLink } from '../../constants';
 
@@ -40,6 +39,7 @@ const Header = ({ onNavigateHome }) => {
           <a 
             href={generateWhatsAppLink("Hola! Quiero hacer un pedido.")}
             className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-2.5 rounded-full text-[11px] font-black transition-all active:scale-95 uppercase tracking-widest shadow-lg shadow-orange-500/10"
+            target='_blank'
           >
             WhatsApp Directo
           </a>

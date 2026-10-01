@@ -10,7 +10,7 @@ const CatalogSection = ({ onNavigateCatalog, onAddToCart, onNavigateProduct }) =
         <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-10 gap-6 text-center md:text-left">
           <div className="flex flex-col gap-1">
             <h2 className="text-4xl md:text-[3.5rem] font-black text-black tracking-tighter uppercase leading-none">
-              CATÁLOGO DE <span className="text-orange-500">BEBIDAS</span>
+              CATÁLOGO DE <span className="text-orange-500">LICORES</span>
             </h2>
           </div>
         </div>

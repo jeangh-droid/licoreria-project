@@ -6,7 +6,7 @@ export const NAV_ITEMS = [
   { label: 'Cobertura', href: '#cobertura' },
   { label: 'Promos', href: '#promos' },
   { label: 'Productos', href: '#productos' },
-  { label: 'Reseñas', href: '#resenas' },
+  { label: 'Eventos', href: '#eventos' },
 ];
 
 export const COVERAGE_AREAS = [
@@ -18,27 +18,17 @@ export const COVERAGE_AREAS = [
 export const EVENT_REVIEWS = [
   {
     id: 1,
-    title: 'Evento de ejemplo',
-    event: 'Ejemplo Party 2024',
-    text: 'Dosis 24/7 salvó la noche. En esta parte se hará una pequeña descripción de la experiencia',
-    user: 'Juan Carlos M.',
-    image: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&q=80&w=800'
+    title: 'Celebra tu Cumpleaños con Dosis 24/7',
+    event: 'Cumpleaños Dosis 24/7',
+    text: 'Dosis 24/7 te arma la lista de bebidas para que actives tu fiesta.',
+    image: 'eventos/cumpleanho.jpg'
   },
   {
     id: 2,
-    title: 'Matrimonio "---"',
-    event: 'Evento Privado',
-    text: 'Contratamos el pack premium para la barra libre y no faltó nada. Acá igual',
-    user: 'lorem & ipsum',
-    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800'
-  },
-  {
-    id: 3,
-    title: 'Aniversario "---"',
-    event: 'Fiesta Local',
-    text: 'Ejemplo de un evento, en este caso de una fiesta local.',
-    user: 'Sindicato Local',
-    image: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80&w=800'
+    title: 'Celebraciones de promoción / graduación',
+    event: 'Promoción Dosis 24/7',
+    text: 'Haz que tu día sea inolvidable. Celebra a lo grande sin preocuparte de gastar de más.',
+    image: 'eventos/graduacion.jpg'
   }
 ];
 
@@ -169,7 +159,10 @@ export const CATALOG_PRODUCTS = [
   { id: 't3', category: 'rtd', name: 'Tres Smirnoff 355ml - Sabor manzana', price: 34.90, image: 'complementos/rtd/comboSmirnoff.png' },
 
   // --- BEBIDAS ---
-  { id: 'b1', category: 'bebida', name: 'Agua San Luis', price: 5.00, image: 'complementos/bebida/sanLuis.png' },
+  { id: 'b1', category: 'bebida', name: 'Agua San Luis 600ml', price: 5.00, image: 'complementos/bebida/sanLuis.png' },
+  { id: 'b2', category: 'bebida', name: 'Gaseosa Coca cola 1.5L', price: 12.00, image: 'complementos/bebida/cocaCola.png' },
+  { id: 'b3', category: 'bebida', name: 'Evervess 1.5L', price: 10.00, image: 'complementos/bebida/evervess.png' },
+  { id: 'b4', category: 'bebida', name: 'Gaseaosa Guarana 2L', price: 10.90, image: 'complementos/bebida/guarana.png' },
 
   // --- CIGARROS ---
   { id: 'c1', category: 'cigarro', name: 'Cigarro Lucky Mora 10 Unid.', price: 14.90, image: 'complementos/cigarro/luckyMora.png' },
@@ -178,7 +171,11 @@ export const CATALOG_PRODUCTS = [
   // --- SNACKS ---
   { id: 's1', category: 'snack', name: 'Papas Inka Chips 135g', price: 9.90, image: 'complementos/snack/inkaChips.png' },
   { id: 's2', category: 'snack', name: 'Piqueo Snax Original 190g', price: 11.90, image: 'complementos/snack/piqueoSnax.png' },
-  { id: 's3', category: 'snack', name: 'Camote Frito Tiyapuy 142g', price: 9.90, image: 'complementos/snack/tiyapuy.png' }
+  { id: 's3', category: 'snack', name: 'Camote Frito Tiyapuy 142g', price: 9.90, image: 'complementos/snack/tiyapuy.png' },
+
+  // --- COMPLEMENTOS ---
+  { id: 'e1', category: 'extras', name: 'Bolsa de Hielo 1.5Kg', price: 7.00, image: 'complementos/extras/hielo.png' },
+  { id: 'e2', category: 'extras', name: 'Encendedor - Diferentes colores', price: 2.00, image: 'complementos/extras/encendedor.png' },
 
 ];
 
@@ -217,7 +214,8 @@ export const CATEGORIES_GROUPS = [
       { id: 'rtd', name: 'RTD' },
       { id: 'cigarro', name: 'CIGARROS' },
       { id: 'bebida', name: 'BEBIDAS' },
-      { id: 'snack', name: 'SNACKS' }
+      { id: 'snack', name: 'SNACKS' },
+      { id: 'extras', name: 'EXTRAS' },
     ]
   }
 ];

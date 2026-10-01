@@ -4,7 +4,7 @@ import { EVENT_REVIEWS } from '../../constants';
 
 const Reviews = () => {
   return (
-    <section id="resenas" className="py-16 bg-white/30 overflow-hidden">
+    <section id="eventos" className="py-16 bg-white/30 overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <span className="text-[#ff6d00] font-black text-[10px] md:text-xs uppercase tracking-[0.4em] mb-2 block">
@@ -20,7 +20,7 @@ const Reviews = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 ">
           {EVENT_REVIEWS.map((review) => (
             <div key={review.id} className="bg-white rounded-[2.5rem] overflow-hidden shadow-sm border border-slate-100 flex flex-col group hover:shadow-xl transition-all duration-500">
               <div className="h-56 md:h-64 overflow-hidden relative">

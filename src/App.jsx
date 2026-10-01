@@ -149,7 +149,7 @@ const App = () => {
               </div>
             </section>
 
-            <section id="promos" className="py-12">
+            <section id="promos" className="py-12 bg-white/30" >
               <div className="container mx-auto px-4 md:px-6">
                 <div className="flex flex-col md:flex-row items-center justify-between mb-8 gap-4 text-center md:text-left">
                   <h2 className="text-4xl md:text-[3.5rem] font-black text-black tracking-tighter uppercase leading-none">

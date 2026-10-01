@@ -48,13 +48,13 @@ const Footer = () => {
 
           {/* Social Icons */}
           <div className="flex items-center gap-6 mb-6">
-            <a href="#" className="text-white hover:text-orange-500 transition-colors">
+            <a href="https://www.facebook.com/profile.php?id=61581060594425" className="text-white hover:text-orange-500 transition-colors" target='_blank'>
               <Facebook className="w-6 h-6" />
             </a>
-            <a href="#" className="text-white hover:text-orange-500 transition-colors">
+            <a href="https://www.instagram.com/dosis_24_7?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="text-white hover:text-orange-500 transition-colors" target='_blank'>
               <Instagram className="w-6 h-6" />
             </a>
-            <a href={`https://wa.me/${WHATSAPP_NUMBER}`} className="text-white hover:text-orange-500 transition-colors">
+            <a href={`https://wa.me/${WHATSAPP_NUMBER}`} className="text-white hover:text-orange-500 transition-colors" target='_blank'>
               <MessageCircle className="w-6 h-6" />
             </a>
             <a href="#" className="text-white hover:text-orange-500 transition-colors">
